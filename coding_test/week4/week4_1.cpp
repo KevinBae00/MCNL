@@ -11,9 +11,9 @@ using namespace std;
 
 
 int main(){
-    int n,x;
+    int n,x; //n: 입력하는 입력 개수, x: push 하는 값
     stack<int> s;
-    string str;
+    string str;//입력받는 명령어
     cin >> n;
     for(int i=0;i<n;i++){
         cin >> str;
