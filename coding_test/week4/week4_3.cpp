@@ -1,6 +1,7 @@
 #include <iostream>
-using namespace std;
 #include <list>
+
+using namespace std;
 //창영이 나쁜놈..
 
 
@@ -20,7 +21,7 @@ int main(){
             if((*it>='a'&&*it<='z')||(*it>='A'&&*it<='Z')||(*it>='0'&&*it<='9'))
                 l.insert(itr,*it);
             else if(*it=='-'){
-                if(!l.empty()){
+                if(itr!=l.begin()){
                     itr=l.erase(--itr);//itr의 위치가 삭제되므로 새롭게 지정
                 }
             }
