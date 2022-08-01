@@ -6,14 +6,14 @@
 
 long long solution(int n) {
     long long answer = 0;
-    long long odd=1;
-    answer=1;
-    if(n%2==1) odd=(n/2+1);
-    while(n!=1){
-        n/=2;
-        answer*=2;
+    long long o=1;
+    for(int i=0;i<n;i++){
+        o=1;
+        for(int j=0; j<i; j++){
+            o*=(n-j);
+            o/=(j+1);
+        }
     }
-    answer*=odd;
     return answer;
 }
 
