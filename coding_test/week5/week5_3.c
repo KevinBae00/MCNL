@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-
+//아직 못품
 long long solution(int n) {
     long long answer = 0;
     long long o=1;

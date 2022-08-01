@@ -6,8 +6,8 @@
 
 using namespace std;
 
-bool compare(pair<int, int> a, pair<int, int> b){
-    if(a.first == b.first){
+bool compare(pair<int, int> a, pair<int, int> b){//sort하는 규칙
+    if(a.first == b.first){//first는 첫번째  int를 말함
         return a.second<b.second;
     }else{
         return a.first<b.first;
@@ -19,7 +19,7 @@ int main(){
     cin.tie(nullptr);
     cout.tie(nullptr);
     int n,x,y;
-    vector<pair<int,int>> v;
+    vector<pair<int,int>> v;//pair는 백터에 여러 값 넣을 때 쓴다.
     cin >> n;
 
     for(int i=0;i<n;i++){

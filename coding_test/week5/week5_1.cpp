@@ -10,9 +10,9 @@ int main(){
     cin.tie(NULL);
     cout.tie(NULL);
     
-    int n,x;
-    string str;
-    queue<int> q;
+    int n,x;//n: 명령 입력수, x: 넣는 정수
+    string str;//명령
+    queue<int> q;//queue
 
     cin >> n;
 
