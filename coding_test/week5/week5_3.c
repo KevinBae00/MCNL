@@ -3,18 +3,15 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-//아직 못품
+/*다만 왜 파보니치 수열로 풀어야 하느냐
+가정 n-1개의 가능성에다가 나머지 하나가 낄 가능성 n-2의 가능성을 더해서 n으로 할 수 있는 가능성을 만든다(?)
+
+*/
 long long solution(int n) {
     long long answer = 0;
-    long long o=1;
-    for(int i=0;i<n;i++){
-        o=1;
-        for(int j=0; j<i; j++){
-            o*=(n-j);
-            o/=(j+1);
-        }
-    }
-    return answer;
+    if(n==1) return answer=1;
+    else if(n==2) return answer=2;
+    else return answer=solution(n-1)+solution(n-2);
 }
 
 int main(){
